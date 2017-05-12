@@ -15,14 +15,6 @@
  */
 package com.qwazr.jdbc.cache.test;
 
-import com.qwazr.jdbc.cache.ResultSetCache;
-import org.apache.commons.io.IOUtils;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
-import org.junit.runners.MethodSorters;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
@@ -50,6 +42,15 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
+
+import org.apache.commons.io.IOUtils;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+
+import com.qwazr.jdbc.cache.ResultSetCache;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class DerbyTest {
